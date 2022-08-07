@@ -3,7 +3,7 @@ import java.sql.*;
 public class createDatabase{
     public static void main(String[] args) throws Exception
     {
-	    Scanner in= new Scanner(System.in);
+	  Scanner in= new Scanner(System.in);
         System.out.println("Enter Database Name : ");
         String db=in.nextLine();
         try 

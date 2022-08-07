@@ -1,14 +1,14 @@
 import java.util.Scanner;
 import java.sql.*;
 public class retrieveData{
-    public static void main(String[] args) throws Exception
-    {
+	public static void main(String[] args) throws Exception
+	{
 		Scanner in= new Scanner(System.in);
 		System.out.println("To Retrieve Data Using parameters Enter - 1 \nTo Retrive Data Without Using Parameters Enter - any integer");
 		int inputvalue=in.nextInt();
-    	try
+    	      try
 		{
-	    	Class.forName("com.mysql.jdbc.Driver");
+	    	      Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/mulesoft", "root", "");
 			Statement st = con.createStatement();
 			if(inputvalue==1)
@@ -46,10 +46,10 @@ public class retrieveData{
 				}
 			}
 			con.close();
-        }
-    	catch(SQLException e)
-        {
-        System.out.println(e);
-        }
-    }
+		}
+    	  	catch(SQLException e)
+        	{
+        		System.out.println(e);
+        	}
+	}
 }
