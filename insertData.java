@@ -4,10 +4,10 @@ public class insertData{
     {
         try 
         {
-		Class.forName("com.mysql.jdbc.Driver");
+	    Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mulesoft", "root", "");
             Statement st = con.createStatement();
-		st.addBatch("insert into movies values(1,'Baahubali','Prabhas','Anushka', 'S.S.Rajamouli',2015)");
+	    st.addBatch("insert into movies values(1,'Baahubali','Prabhas','Anushka', 'S.S.Rajamouli',2015)");
             st.addBatch("insert into movies values(2,'Venom','Tom Hardy','Michelle Williams','Ruben Fleischer',2018)");
             st.addBatch("insert into movies values(3,'Mishan impossible','Jay Chandra','Taapsee Pannu','Swaroop Rsj',2022)");
             st.addBatch("insert into movies values(4,'I Am Legend','Will Smith','Alice Braga','Francis Lawrence',2007)");
@@ -23,7 +23,7 @@ public class insertData{
         }
         catch(SQLException e)
         {
-        System.out.println(e);
+            System.out.println(e);
         }
     }
 }
