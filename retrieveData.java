@@ -6,7 +6,7 @@ public class retrieveData{
 		Scanner in= new Scanner(System.in);
 		System.out.println("To Retrieve Data Using parameters Enter - 1 \nTo Retrive Data Without Using Parameters Enter - any integer");
 		int inputvalue=in.nextInt();
-    	      try
+    	        try
 		{
 	    	      Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost/mulesoft", "root", "");
